@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <instant>
-  <Editor id="18" mixer-width="Wide" zoom-focus="ZoomFocusPlayhead" zoom="4096" snap-to="SnapToBeat" snap-mode="SnapOff" internal-snap-to="SnapToBeat" internal-snap-mode="SnapOff" pre-internal-snap-to="SnapToBeat" pre-internal-snap-mode="SnapOff" edit-point="EditAtPlayhead" visible-track-count="-1" playhead="7986176" left-frame="2871296" y-origin="0,000000" show-measures="yes" maximised="no" follow-playhead="yes" stationary-playhead="no" region-list-sort-type="ByEndInFile" mouse-mode="MouseObject" join-object-range="no" show-editor-mixer="no" show-editor-list="no" editor-list-page="0" show-marker-lines="no" nudge-clock-value="220500">
-    <geometry x-size="2560" y-size="1413" x-pos="0" y-pos="27" edit-horizontal-pane-pos="1012" notebook-shrunk="0" edit-vertical-pane-pos="1127"/>
+  <Editor id="18" mixer-width="Wide" zoom-focus="ZoomFocusPlayhead" zoom="4096" snap-to="SnapToBeat" snap-mode="SnapOff" internal-snap-to="SnapToBeat" internal-snap-mode="SnapOff" pre-internal-snap-to="SnapToBeat" pre-internal-snap-mode="SnapOff" edit-point="EditAtPlayhead" visible-track-count="-1" playhead="7463936" left-frame="3166208" y-origin="0,000000" show-measures="yes" maximised="no" follow-playhead="yes" stationary-playhead="no" region-list-sort-type="ByEndInFile" mouse-mode="MouseObject" join-object-range="no" show-editor-mixer="no" show-editor-list="no" editor-list-page="0" show-marker-lines="no" nudge-clock-value="220500">
+    <geometry x-size="2560" y-size="1413" x-pos="0" y-pos="27" edit-horizontal-pane-pos="1012" notebook-shrunk="0" edit-vertical-pane-pos="1126"/>
     <Buttons>
       <Press/>
       <Release/>
     </Buttons>
     <Selection>
-      <RouteView id="520"/>
+      <Region id="255"/>
     </Selection>
     <RegionList sort-type="ByEndInFile" sort-ascending="yes" show-all="no" show-automatic-regions="yes"/>
   </Editor>

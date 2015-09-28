@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session version="3001" name="youvegittobekidding" sample-rate="44100" id-counter="658" event-counter="39">
+<Session version="3001" name="youvegittobekidding" sample-rate="44100" id-counter="1033" event-counter="81">
   <MIDIPorts>
     <Port name="MIDI Clock in" direction="input"/>
     <Port name="MIDI Clock out" direction="output"/>
@@ -233,7 +233,7 @@
   </Routes>
   <Playlists>
     <Playlist id="235" name="psychic tv - the orchids" type="audio" orig-track-id="204" frozen="no" combine-ops="0">
-      <Region name="psychic tv - the orchids.1" muted="0" opaque="1" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="1" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="136352" length="7870048" position="0" sync-position="136352" ancestral-start="0" ancestral-length="0" stretch="1" shift="1" positional-lock-style="AudioTime" layering-index="0" envelope-active="0" default-fade-in="0" default-fade-out="0" fade-in-active="1" fade-out-active="1" scale-amplitude="1" id="255" type="audio" first-edit="nothing" source-0="191" source-1="193" master-source-0="191" master-source-1="193" channels="2">
+      <Region name="psychic tv - the orchids.1" muted="0" opaque="1" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="1" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="136352" length="7870048" position="0" sync-position="136352" ancestral-start="0" ancestral-length="0" stretch="1" shift="1" positional-lock-style="AudioTime" layering-index="0" envelope-active="0" default-fade-in="0" default-fade-out="0" fade-in-active="1" fade-out-active="1" scale-amplitude="3.61997294426" id="255" type="audio" first-edit="nothing" source-0="191" source-1="193" master-source-0="191" master-source-1="193" channels="2">
         <Envelope default="yes"/>
         <FadeIn>
           <AutomationList automation-id="fadein" id="256" default="1" min-yval="0" max-yval="2" interpolation-style="Curved" state="Off" style="Absolute">
@@ -252,33 +252,111 @@
         <FadeOut>
           <AutomationList automation-id="fadeout" id="258" default="1" min-yval="0" max-yval="2" interpolation-style="Curved" state="Off" style="Absolute">
             <events>0 1
-64 1.0000000116861e-07
+494383.5 0.6
+758054.7 0.0750000029802322
+791013.6 0.0375000014901161
+823972.5 0.0187500007450581
+856931.4 0.00937500037252903
+889890.3 0.00468750018626451
+922849.2 0.00234375009313226
+955808.1 0.00117187504656613
+988767 1.0000000116861e-07
 </events>
           </AutomationList>
         </FadeOut>
         <InverseFadeOut>
           <AutomationList automation-id="fadeout" id="259" default="1" min-yval="0" max-yval="2" interpolation-style="Curved" state="Off" style="Absolute">
             <events>0 1.0000000116861e-07
-64 1
+32958.9 0.00117187504656613
+65917.8 0.00234375009313226
+98876.7 0.00468750018626451
+131835.6 0.00937500037252903
+164794.5 0.0187500007450581
+197753.4 0.0375000014901161
+230712.3 0.0750000029802322
+494383.5 0.6
+988767 1
 </events>
           </AutomationList>
         </InverseFadeOut>
       </Region>
     </Playlist>
     <Playlist id="551" name="b2  is anybody here" type="audio" orig-track-id="520" frozen="no" combine-ops="0">
-      <Region name="b2  is anybody here.1" muted="0" opaque="1" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="1" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="0" length="7052178" position="7404544" sync-position="0" ancestral-start="0" ancestral-length="0" stretch="1" shift="1" positional-lock-style="AudioTime" layering-index="0" envelope-active="0" default-fade-in="0" default-fade-out="0" fade-in-active="0" fade-out-active="1" scale-amplitude="1" id="571" type="audio" first-edit="nothing" source-0="507" source-1="509" master-source-0="507" master-source-1="509" channels="2">
+      <Region name="b2  is anybody here.1" muted="0" opaque="1" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="1" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="0" length="7052178" position="6876160" sync-position="0" ancestral-start="0" ancestral-length="0" stretch="1" shift="1" positional-lock-style="AudioTime" layering-index="0" envelope-active="0" default-fade-in="0" default-fade-out="0" fade-in-active="1" fade-out-active="1" scale-amplitude="1" id="571" type="audio" first-edit="nothing" source-0="507" source-1="509" master-source-0="507" master-source-1="509" channels="2">
         <Envelope default="yes"/>
         <FadeIn>
           <AutomationList automation-id="fadein" id="572" default="1" min-yval="0" max-yval="2" interpolation-style="Curved" state="Off" style="Absolute">
             <events>0 1.0000000116861e-07
-64 1
+12939.63671875 0.0475819172407227
+25879.2734375 0.0950560461285102
+38818.91015625 0.142314842485729
+51758.546875 0.189251249932216
+64698.18359375 0.235758942402425
+77637.8203125 0.281732565008177
+90577.453125 0.327067972701384
+103517.09375 0.371662466196095
+116456.734375 0.415415024615417
+129396.3671875 0.458226534336316
+142336 0.500000013513858
+155275.640625 0.540640831776296
+168215.28125 0.58005692459331
+181154.90625 0.618159001831793
+194094.546875 0.654860750026735
+207034.1875 0.69007902790899
+219973.828125 0.723734022442074
+232913.46875 0.755749591075845
+245853.09375 0.786053140342232
+258792.734375 0.814575968507562
+271732.375 0.841253523627827
+284672 0.866025419388898
+297611.65625 0.888835485056841
+310551.28125 0.909632009497776
+323490.90625 0.928367928798188
+336430.5625 0.945000830778003
+349370.1875 0.959492997594226
+362309.8125 0.97181157768799
+375249.46875 0.981928696188829
+388189.09375 0.989821447937512
+401128.75 0.995471931203179
+427008 1
 </events>
           </AutomationList>
         </FadeIn>
         <InverseFadeIn>
           <AutomationList automation-id="fadein" id="573" default="1" min-yval="0" max-yval="2" interpolation-style="Curved" state="Off" style="Absolute">
             <events>0 1
-64 1.0000000116861e-07
+25879.25 0.995471931203179
+38818.90625 0.989821447937512
+51758.53125 0.981928696188829
+64698.1875 0.97181157768799
+77637.8125 0.959492997594226
+90577.4375 0.945000830778003
+103517.09375 0.928367928798188
+116456.71875 0.909632009497776
+129396.34375 0.888835485056841
+142336 0.866025419388898
+155275.625 0.841253523627827
+168215.265625 0.814575968507562
+181154.90625 0.786053140342232
+194094.53125 0.755749591075845
+207034.171875 0.723734022442074
+219973.8125 0.69007902790899
+232913.453125 0.654860750026735
+245853.09375 0.618159001831793
+258792.71875 0.58005692459331
+271732.359375 0.540640831776296
+284672 0.500000013513858
+297611.6328125 0.458226534336316
+310551.265625 0.415415024615417
+323490.90625 0.371662466196095
+336430.546875 0.327067972701384
+349370.1796875 0.281732565008177
+362309.81640625 0.235758942402425
+375249.453125 0.189251249932216
+388189.08984375 0.142314842485729
+401128.7265625 0.0950560461285102
+414068.36328125 0.0475819172407227
+427008 1.0000000116861e-07
 </events>
           </AutomationList>
         </InverseFadeIn>
