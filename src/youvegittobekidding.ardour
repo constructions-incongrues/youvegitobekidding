@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session version="3001" name="youvegittobekidding" sample-rate="44100" id-counter="311" event-counter="4">
+<Session version="3001" name="youvegittobekidding" sample-rate="44100" id-counter="658" event-counter="39">
   <MIDIPorts>
     <Port name="MIDI Clock in" direction="input"/>
     <Port name="MIDI Clock out" direction="output"/>
@@ -27,7 +27,7 @@
     <Option name="subframes-per-frame" value="100"/>
     <Option name="timecode-format" value="8"/>
     <Option name="raid-path" value=""/>
-    <Option name="audio-search-path" value="/home/trivoallan/Documents/Ardour/youvegittobekidding/src/interchange/src/audiofiles"/>
+    <Option name="audio-search-path" value="/home/trivoallan/Documents/Ardour/youvegittobekidding/src/interchange/src/audiofiles:/home/johan/dev/youvegittobekidding/src/interchange/src/audiofiles"/>
     <Option name="midi-search-path" value=""/>
     <Option name="track-name-number" value="0"/>
     <Option name="track-name-take" value="0"/>
@@ -65,12 +65,15 @@
   <Sources>
     <Source name="psychic tv - the orchids%L.wav" type="audio" flags="" id="191" channel="0" origin=""/>
     <Source name="psychic tv - the orchids%R.wav" type="audio" flags="" id="193" channel="0" origin=""/>
+    <Source name="b2  is anybody here%L.wav" type="audio" flags="" id="507" channel="0" origin=""/>
+    <Source name="b2  is anybody here%R.wav" type="audio" flags="" id="509" channel="0" origin=""/>
   </Sources>
   <Regions>
     <Region name="psychic tv - the orchids" muted="0" opaque="1" locked="0" video-locked="0" automatic="0" whole-file="1" import="0" external="1" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="0" length="8006400" position="0" sync-position="0" ancestral-start="0" ancestral-length="0" stretch="1" shift="1" positional-lock-style="AudioTime" layering-index="0" envelope-active="0" default-fade-in="0" default-fade-out="0" fade-in-active="1" fade-out-active="1" scale-amplitude="1" id="195" type="audio" first-edit="nothing" source-0="191" source-1="193" master-source-0="191" master-source-1="193" channels="2"/>
+    <Region name="b2  is anybody here" muted="0" opaque="1" locked="0" video-locked="0" automatic="0" whole-file="1" import="0" external="1" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="0" length="7052178" position="0" sync-position="0" ancestral-start="0" ancestral-length="0" stretch="1" shift="1" positional-lock-style="AudioTime" layering-index="0" envelope-active="0" default-fade-in="0" default-fade-out="0" fade-in-active="1" fade-out-active="1" scale-amplitude="1" id="511" type="audio" first-edit="nothing" source-0="507" source-1="509" master-source-0="507" master-source-1="509" channels="2"/>
   </Regions>
   <Locations>
-    <Location id="266" name="Session" start="0" end="8006399" flags="IsSessionRange" locked="no" position-lock-style="AudioTime"/>
+    <Location id="266" name="Session" start="0" end="14456722" flags="IsSessionRange" locked="no" position-lock-style="AudioTime"/>
   </Locations>
   <Bundles/>
   <Routes>
@@ -78,9 +81,11 @@
       <IO name="Bus Master" id="45" direction="Input" default-type="audio" user-latency="0">
         <Port type="audio" name="Bus Master/audio_in 1">
           <Connection other="psychic tv - the orchids/audio_out 1"/>
+          <Connection other="b2  is anybody here/audio_out 1"/>
         </Port>
         <Port type="audio" name="Bus Master/audio_in 2">
           <Connection other="psychic tv - the orchids/audio_out 2"/>
+          <Connection other="b2  is anybody here/audio_out 2"/>
         </Port>
       </IO>
       <IO name="Bus Master" id="46" direction="Output" default-type="audio" user-latency="0">
@@ -174,10 +179,61 @@
       <Controllable name="recenable" id="232" flags="Toggle" value="0.000000000000"/>
       <Diskstream flags="Recordable" playlist="psychic tv - the orchids" name="psychic tv - the orchids" id="234" speed="1.000000" capture-alignment="Automatic" record-safe="no" channels="2"/>
     </Route>
+    <Route id="520" name="b2  is anybody here" default-type="audio" active="yes" phase-invert="00" denormal-protection="no" meter-point="MeterPostFader" meter-type="MeterPeak" order-key="2" self-solo="no" soloed-by-upstream="0" soloed-by-downstream="0" solo-isolated="no" solo-safe="no" monitoring="" saved-meter-point="MeterPostFader" mode="Normal">
+      <IO name="b2  is anybody here" id="537" direction="Input" default-type="audio" user-latency="0">
+        <Port type="audio" name="b2  is anybody here/audio_in 1">
+          <Connection other="system:capture_1"/>
+        </Port>
+        <Port type="audio" name="b2  is anybody here/audio_in 2">
+          <Connection other="system:capture_2"/>
+        </Port>
+      </IO>
+      <IO name="b2  is anybody here" id="538" direction="Output" default-type="audio" user-latency="0">
+        <Port type="audio" name="b2  is anybody here/audio_out 1">
+          <Connection other="Bus Master/audio_in 1"/>
+        </Port>
+        <Port type="audio" name="b2  is anybody here/audio_out 2">
+          <Connection other="Bus Master/audio_in 2"/>
+        </Port>
+      </IO>
+      <Controllable name="solo" id="522" flags="Toggle" value="0.000000000000"/>
+      <Controllable name="mute" id="524" flags="Toggle" value="0.000000000000"/>
+      <MuteMaster mute-point="PostFader,Listen,Main" muted="no"/>
+      <Automation/>
+      <RemoteControl id="2"/>
+      <Pannable>
+        <Controllable name="pan-azimuth" id="528" flags="" value="0.500000000000"/>
+        <Controllable name="pan-width" id="532" flags="" value="1.000000000000"/>
+        <Controllable name="pan-elevation" id="530" flags="" value="0.000000000000"/>
+        <Controllable name="pan-frontback" id="534" flags="" value="0.000000000000"/>
+        <Controllable name="pan-lfe" id="536" flags="" value="0.000000000000"/>
+        <Automation/>
+      </Pannable>
+      <Processor id="542" name="Amp" active="yes" user-latency="0" type="trim">
+        <Controllable name="trimcontrol" id="544" flags="GainLike" value="1.000000000000"/>
+      </Processor>
+      <Processor id="539" name="Amp" active="yes" user-latency="0" type="amp">
+        <Controllable name="gaincontrol" id="541" flags="GainLike" value="0.343142330647"/>
+      </Processor>
+      <Processor id="545" name="meter-Audio  1" active="yes" user-latency="0" type="meter"/>
+      <Processor id="546" name="b2  is anybody here" active="yes" user-latency="0" own-input="yes" own-output="no" output="b2  is anybody here" type="main-outs" role="Main">
+        <PannerShell bypassed="no" user-panner="" linked-to-route="yes"/>
+        <Pannable>
+          <Controllable name="pan-azimuth" id="528" flags="" value="0.500000000000"/>
+          <Controllable name="pan-width" id="532" flags="" value="1.000000000000"/>
+          <Controllable name="pan-elevation" id="530" flags="" value="0.000000000000"/>
+          <Controllable name="pan-frontback" id="534" flags="" value="0.000000000000"/>
+          <Controllable name="pan-lfe" id="536" flags="" value="0.000000000000"/>
+          <Automation/>
+        </Pannable>
+      </Processor>
+      <Controllable name="recenable" id="548" flags="Toggle" value="0.000000000000"/>
+      <Diskstream flags="Recordable" playlist="b2  is anybody here" name="b2  is anybody here" id="550" speed="1.000000" capture-alignment="Automatic" record-safe="no" channels="2"/>
+    </Route>
   </Routes>
   <Playlists>
     <Playlist id="235" name="psychic tv - the orchids" type="audio" orig-track-id="204" frozen="no" combine-ops="0">
-      <Region name="psychic tv - the orchids.1" muted="0" opaque="1" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="1" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="136352" length="7870048" position="0" sync-position="0" ancestral-start="0" ancestral-length="0" stretch="1" shift="1" positional-lock-style="AudioTime" layering-index="0" envelope-active="0" default-fade-in="0" default-fade-out="0" fade-in-active="1" fade-out-active="1" scale-amplitude="1" id="255" type="audio" first-edit="nothing" source-0="191" source-1="193" master-source-0="191" master-source-1="193" channels="2">
+      <Region name="psychic tv - the orchids.1" muted="0" opaque="1" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="1" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="136352" length="7870048" position="0" sync-position="136352" ancestral-start="0" ancestral-length="0" stretch="1" shift="1" positional-lock-style="AudioTime" layering-index="0" envelope-active="0" default-fade-in="0" default-fade-out="0" fade-in-active="1" fade-out-active="1" scale-amplitude="1" id="255" type="audio" first-edit="nothing" source-0="191" source-1="193" master-source-0="191" master-source-1="193" channels="2">
         <Envelope default="yes"/>
         <FadeIn>
           <AutomationList automation-id="fadein" id="256" default="1" min-yval="0" max-yval="2" interpolation-style="Curved" state="Off" style="Absolute">
@@ -202,6 +258,39 @@
         </FadeOut>
         <InverseFadeOut>
           <AutomationList automation-id="fadeout" id="259" default="1" min-yval="0" max-yval="2" interpolation-style="Curved" state="Off" style="Absolute">
+            <events>0 1.0000000116861e-07
+64 1
+</events>
+          </AutomationList>
+        </InverseFadeOut>
+      </Region>
+    </Playlist>
+    <Playlist id="551" name="b2  is anybody here" type="audio" orig-track-id="520" frozen="no" combine-ops="0">
+      <Region name="b2  is anybody here.1" muted="0" opaque="1" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="1" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="0" length="7052178" position="7404544" sync-position="0" ancestral-start="0" ancestral-length="0" stretch="1" shift="1" positional-lock-style="AudioTime" layering-index="0" envelope-active="0" default-fade-in="0" default-fade-out="0" fade-in-active="0" fade-out-active="1" scale-amplitude="1" id="571" type="audio" first-edit="nothing" source-0="507" source-1="509" master-source-0="507" master-source-1="509" channels="2">
+        <Envelope default="yes"/>
+        <FadeIn>
+          <AutomationList automation-id="fadein" id="572" default="1" min-yval="0" max-yval="2" interpolation-style="Curved" state="Off" style="Absolute">
+            <events>0 1.0000000116861e-07
+64 1
+</events>
+          </AutomationList>
+        </FadeIn>
+        <InverseFadeIn>
+          <AutomationList automation-id="fadein" id="573" default="1" min-yval="0" max-yval="2" interpolation-style="Curved" state="Off" style="Absolute">
+            <events>0 1
+64 1.0000000116861e-07
+</events>
+          </AutomationList>
+        </InverseFadeIn>
+        <FadeOut>
+          <AutomationList automation-id="fadeout" id="574" default="1" min-yval="0" max-yval="2" interpolation-style="Curved" state="Off" style="Absolute">
+            <events>0 1
+64 1.0000000116861e-07
+</events>
+          </AutomationList>
+        </FadeOut>
+        <InverseFadeOut>
+          <AutomationList automation-id="fadeout" id="575" default="1" min-yval="0" max-yval="2" interpolation-style="Curved" state="Off" style="Absolute">
             <events>0 1.0000000116861e-07
 64 1
 </events>
@@ -246,16 +335,16 @@
     <Meter start="1|1|0" note-type="4.000000" divisions-per-bar="4.000000" movable="no"/>
   </TempoMap>
   <ControlProtocols>
-    <Protocol name="Generic MIDI" active="no"/>
-    <Protocol name="Wiimote" active="no"/>
     <Protocol name="Mackie" active="no"/>
     <Protocol name="Open Sound Control (OSC)" active="no"/>
+    <Protocol name="Wiimote" active="no"/>
+    <Protocol name="Generic MIDI" active="no"/>
   </ControlProtocols>
   <Extra>
     <UI>
       <Window name="key-editor" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
-      <Window name="rc-options-editor" visible="no" x-off="210" y-off="58" x-size="945" y-size="651"/>
-      <Window name="session-options-editor" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="rc-options-editor" visible="no" x-off="807" y-off="394" x-size="945" y-size="651"/>
+      <Window name="session-options-editor" visible="no" x-off="941" y-off="544" x-size="677" y-size="352"/>
       <Window name="speaker-config" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="about" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="add-routes" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
@@ -265,8 +354,8 @@
       <Window name="video-export" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="bundle-manager" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="locations" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
-      <Window name="big-clock" visible="no" x-off="403" y-off="345" x-size="559" y-size="78"/>
-      <Window name="audio-connection-manager" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="big-clock" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="audio-connection-manager" visible="no" x-off="1028" y-off="510" x-size="504" y-size="433"/>
       <Window name="midi-connection-manager" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
       <Window name="P-28-50" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="no"/>
       <Window name="P-28-47" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="no"/>
@@ -276,6 +365,10 @@
       <Window name="P-204-223" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="no"/>
       <Window name="P-204-229" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="no"/>
       <Window name="P-204-230" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="no"/>
+      <Window name="P-520-542" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="no"/>
+      <Window name="P-520-539" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="no"/>
+      <Window name="P-520-545" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="no"/>
+      <Window name="P-520-546" visible="no" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="no"/>
       <GUIObjectState>
         <Object id="route 28" color="58981:29490:42270"/>
         <Object id="rtav 28" height="64" visible="1"/>
@@ -297,6 +390,16 @@
         <Object id="automation 204 10/0/0" height="64" visible="0"/>
         <Object id="automation 212" height="64" visible="0"/>
         <Object id="automation 216" height="64" visible="0"/>
+        <Object id="route 520" color="51117:58981:29490"/>
+        <Object id="strip 520" visible="1">
+          <Object id="processor 539"/>
+        </Object>
+        <Object id="rtav 520" height="64" visible="1"/>
+        <Object id="automation 541" height="64" visible="0"/>
+        <Object id="automation 544" height="64" visible="0"/>
+        <Object id="automation 520 10/0/0" height="64" visible="0"/>
+        <Object id="automation 528" height="64" visible="0"/>
+        <Object id="automation 532" height="64" visible="0"/>
       </GUIObjectState>
     </UI>
     <Videomonitor active="no"/>
