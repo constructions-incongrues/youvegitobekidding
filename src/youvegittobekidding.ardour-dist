@@ -27,7 +27,7 @@
     <Option name="subframes-per-frame" value="100"/>
     <Option name="timecode-format" value="8"/>
     <Option name="raid-path" value=""/>
-    <Option name="audio-search-path" value="/home/trivoallan/Documents/Ardour/youvegittobekidding/var:/home/trivoallan/Documents/Ardour/youvegittobekidding/src/interchange/src/audiofiles"/>
+    <Option name="audio-search-path" value="@project.dirs.base@/var:@project.dirs.base@/src/interchange/src/audiofiles"/>
     <Option name="midi-search-path" value=""/>
     <Option name="track-name-number" value="0"/>
     <Option name="track-name-take" value="0"/>
