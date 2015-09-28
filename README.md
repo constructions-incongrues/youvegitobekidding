@@ -4,11 +4,6 @@
 git clone git@github.com:constructions-incongrues/youvegittobekidding.git
 cd youvegittobekidding
 ./composer.phar install
-```
-
-# Configuration
-
-```
 ant configure
 ```
 
