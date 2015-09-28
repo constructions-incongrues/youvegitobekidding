@@ -63,8 +63,8 @@
   </Config>
   <Metadata/>
   <Sources>
-    <Source name="psychic tv - the orchids.wav" type="audio" flags="" id="173" channel="0" origin="/home/trivoallan/Documents/Ardour/youvegittobekidding/var/psychic tv - the orchids.wav"/>
-    <Source name="psychic tv - the orchids.wav" type="audio" flags="" id="175" channel="1" origin="/home/trivoallan/Documents/Ardour/youvegittobekidding/var/psychic tv - the orchids.wav"/>
+    <Source name="psychic tv - the orchids.wav" type="audio" flags="" id="173" channel="0" origin="@project.dirs.base@/var/psychic tv - the orchids.wav"/>
+    <Source name="psychic tv - the orchids.wav" type="audio" flags="" id="175" channel="1" origin="@project.dirs.base@/var/psychic tv - the orchids.wav"/>
   </Sources>
   <Regions>
     <Region name="psychic tv - the orchids" muted="0" opaque="1" locked="0" video-locked="0" automatic="0" whole-file="1" import="0" external="1" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="0" length="8006400" position="0" sync-position="0" ancestral-start="0" ancestral-length="0" stretch="1" shift="1" positional-lock-style="AudioTime" layering-index="0" envelope-active="0" default-fade-in="0" default-fade-out="0" fade-in-active="1" fade-out-active="1" scale-amplitude="1" id="177" type="audio" first-edit="nothing" source-0="173" source-1="175" master-source-0="173" master-source-1="175" channels="2"/>
